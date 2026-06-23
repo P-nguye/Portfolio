@@ -14,14 +14,19 @@ const fadeUp = {
 
 const stagger = { hidden: {}, show: { transition: { staggerChildren: 0.12 } } };
 
-function TimelineItem({ entry }: { entry: TimelineEntry }) {
+function TimelineItem({ entry, index }: { entry: TimelineEntry; index: number }) {
   const [expanded, setExpanded] = useState(false);
   const Icon = entry.type === "work" ? Briefcase : GraduationCap;
   const iconColor = entry.type === "work" ? "text-accent-cyan" : "text-accent-violet";
   const iconBg = entry.type === "work" ? "bg-accent-cyan/10 border-accent-cyan/20" : "bg-accent-violet/10 border-accent-violet/20";
 
   return (
-    <motion.div variants={fadeUp} className="relative flex gap-6 group">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.4, delay: index * 0.1, ease: [0.25, 0.1, 0.25, 1] }}
+      className="relative flex gap-6 group"
+    >
       {/* Timeline connector */}
       <div className="flex flex-col items-center">
         <motion.div
@@ -183,8 +188,8 @@ export default function Timeline() {
               transition={{ duration: 0.25 }}
               className="relative"
             >
-              {entries.map((entry) => (
-                <TimelineItem key={entry.id} entry={entry} />
+              {entries.map((entry, i) => (
+                <TimelineItem key={entry.id} entry={entry} index={i} />
               ))}
             </motion.div>
           </AnimatePresence>

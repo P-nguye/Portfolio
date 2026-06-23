@@ -5,7 +5,7 @@ export const personalInfo = {
   bio: "Computer Science graduate from UBC Okanagan with a strong foundation in full-stack web development and AI engineering. I build scalable applications using Next.js, TypeScript, and React, while leveraging hands-on experience in computer vision and machine learning to solve real-world problems.",
   email: "ntp190704@gmail.com",
   github: "https://github.com/P-nguye",
-  linkedin: "https://linkedin.com/in/nguyen-phong",
+  linkedin: "https://www.linkedin.com/in/tien-phong-nguyen-8b43b527b/",
   location: "Kelowna, BC, Canada",
   resumeUrl: "/Phong-Nguyen-Resume.pdf",
 };
