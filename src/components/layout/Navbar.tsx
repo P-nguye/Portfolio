@@ -69,7 +69,7 @@ export default function Navbar() {
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
         >
-          <span className="text-text-primary">Phong</span>
+          <span className="text-text-primary">Phong Nguyen</span>
           <span className="text-accent-cyan">.</span>
         </motion.button>
 
