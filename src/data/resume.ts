@@ -55,6 +55,58 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+
+  {
+    id: "neferet",
+    title: "The Neferet Trilogy Website",
+    shortDescription: "Immersive cinematic media web platform featuring a multi-timeline layout.",
+    fullDescription:
+      "Engineered an immersive, production-grade media web platform featuring a highly cohesive cinematic user interface designed for a multi-timeline content experience. Consolidated a high-density, 12-page navigation architecture into a scalable dropdown layout to eliminate screen real estate constraints. Implemented custom HTML5 audio playback states via React hooks alongside modular PDF media delivery pipelines.",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "React Hooks", "HTML5 Audio API"],
+    category: "Web",
+    github: "https://github.com/P-nguye/NeferetTriology.git",
+    featured: true,
+    highlights: [
+      "Cinematic user interface engineered for multi-timeline narrative tracking",
+      "Consolidated high-density, 12-page layout into a sleek, scalable dropdown navigation system",
+      "Custom audio playback engine driven by HTML5 APIs and native React state hooks",
+      "Modular digital asset pipelines for structured, secure PDF document delivery",
+    ],
+  },
+  {
+    id: "everspark",
+    title: "EverSpark Productions Website",
+    shortDescription: "Multimedia studio application for portfolio presentation and community interaction.",
+    fullDescription:
+      "A responsive web application that assists a multimedia creative studio in effectively showcasing intellectual properties and managing a fan community. This system supports secure pre-signed audio streaming, interactive forum discussions, and administrative content moderation workflows without auto-transcoding raw files.",
+    tech: ["React", "TypeScript", "Tailwind CSS", "PostgreSQL", "AWS"],
+    category: "Web",
+    github: "https://github.com/P-nguye/EversparkProductions.git",
+    featured: true,
+    highlights: [
+      "Responsive portfolio engine designed to broadcast studio intellectual properties",
+      "Integrated secure, cloud-hosted audio streaming workflows utilizing AWS infrastructure",
+      "Interactive fan forums equipped with full text-based communication systems",
+      "Administrative dashboard providing core community content moderation capabilities",
+    ],
+  },
+  {
+    id: "mackenzie",
+    title: "Mackenzie Middle Website",
+    shortDescription: "Responsive digital media platform with custom grid layouts and asset distribution.",
+    fullDescription:
+      "Developed a highly responsive creative digital media platform featuring a modern grid directory with dynamic client-side state filtering. Implemented interactive modal view routing to deliver high-fidelity character profiles, biographical metadata, and full-figure asset rendering upon headshot interaction. Integrated an optimized digital asset distribution gallery for seamless multi-resolution wallpaper delivery.",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "React Hooks"],
+    category: "Web",
+    github: "https://github.com/P-nguye/Mackenzie-Middle.git",
+    featured: true,
+    highlights: [
+      "Dynamic interactive grid interface utilizing efficient client-side state filtering",
+      "Modal-driven routing layouts for detailed, full-figure character profile rendering",
+      "Optimized, multi-resolution background wallpaper download system",
+      "Component architecture built for seamless responsive performance across screen sizes",
+    ],
+  },
   {
     id: "ublog",
     title: "UBlog Website",
